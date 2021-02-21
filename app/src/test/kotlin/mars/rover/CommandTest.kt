@@ -1,13 +1,18 @@
-package test
+package mars.rover
 
-import mars.rover.Command
-import mars.rover.CommandOption
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertThrows
 
 
 class CommandTest {
+
+    @Test
+    fun `parse lowercase commands test`() {
+        val command = Command("mmrl")
+        val inputs = command.inputs
+        assertEquals(4, inputs.size)
+    }
 
     @Test
     fun `parse command test`() {

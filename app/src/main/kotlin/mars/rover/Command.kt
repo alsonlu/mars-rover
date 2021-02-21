@@ -1,7 +1,10 @@
 package mars.rover
 
 data class Command(private val input: String) {
-    val inputs: List<CommandOption> = input.toCharArray().toList().mapNotNull { CommandOption.valueOf(it) }
+    val inputs: List<CommandOption> = input.toCharArray().toList().mapNotNull {
+        val upperChar = it.toUpperCase()
+        CommandOption.valueOf(upperChar)
+    }
 
     init {
         require(validate())

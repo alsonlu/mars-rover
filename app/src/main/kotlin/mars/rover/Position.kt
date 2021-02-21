@@ -10,10 +10,10 @@ data class Position(val x: Int, val y: Int) {
                 Position(x + 1, y)
             }
             Heading.N -> {
-                Position(x, y + 1)
+                Position(x, y - 1)
             }
             Heading.S -> {
-                Position(x, y - 1)
+                Position(x, y + 1)
             }
         }
     }

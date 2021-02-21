@@ -1,7 +1,5 @@
-package test
+package mars.rover
 
-import mars.rover.Heading
-import mars.rover.Position
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

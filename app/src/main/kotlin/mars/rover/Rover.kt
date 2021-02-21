@@ -19,5 +19,7 @@ class Rover(startingPosition: Position, startingHeading: Heading) {
                 }
             }
         }
+        ROVER_MOVED_QUEUE.onEvent(this)
     }
+
 }
